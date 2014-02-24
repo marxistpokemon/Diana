@@ -1,0 +1,124 @@
+
+skeleton-1.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+2014-02-18_SpineFella_Anim__0000s_0000_foot_R
+  rotate: false
+  xy: 122, 2
+  size: 11, 8
+  orig: 11, 8
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0001_foot_L
+  rotate: false
+  xy: 122, 12
+  size: 13, 9
+  orig: 13, 9
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0002_leg_R
+  rotate: true
+  xy: 50, 21
+  size: 9, 22
+  orig: 9, 22
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0003_leg_L
+  rotate: true
+  xy: 96, 23
+  size: 7, 21
+  orig: 7, 21
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0004_thigh_R
+  rotate: false
+  xy: 2, 5
+  size: 15, 25
+  orig: 15, 25
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0005_thigh_L
+  rotate: true
+  xy: 19, 21
+  size: 9, 29
+  orig: 9, 29
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0006_hip
+  rotate: true
+  xy: 73, 2
+  size: 16, 12
+  orig: 16, 12
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0007_belly
+  rotate: false
+  xy: 97, 3
+  size: 11, 18
+  orig: 11, 18
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0008_torso
+  rotate: true
+  xy: 19, 6
+  size: 13, 21
+  orig: 13, 21
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0009_arm_R
+  rotate: true
+  xy: 42, 8
+  size: 11, 20
+  orig: 11, 20
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0010_forearm_R
+  rotate: true
+  xy: 119, 23
+  size: 7, 18
+  orig: 7, 18
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0011_hand_R
+  rotate: true
+  xy: 152, 23
+  size: 7, 9
+  orig: 7, 9
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0012_arm_L
+  rotate: false
+  xy: 110, 3
+  size: 10, 18
+  orig: 10, 18
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0013_forearm_L
+  rotate: false
+  xy: 87, 2
+  size: 8, 16
+  orig: 8, 16
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0014_hand_L
+  rotate: true
+  xy: 139, 24
+  size: 6, 11
+  orig: 6, 11
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0015_neck
+  rotate: false
+  xy: 64, 2
+  size: 7, 17
+  orig: 7, 17
+  offset: 0, 0
+  index: -1
+2014-02-18_SpineFella_Anim__0000s_0016_head
+  rotate: true
+  xy: 74, 20
+  size: 10, 20
+  orig: 10, 20
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ItemColecao>
+ 	<Itens>
+ 		<Item nome="Flecha" peso="0.5" equipavel="true" instantaneo="false" municao="true" />
+ 		<Item nome="Flecha2" peso="1" equipavel="true" instantaneo="false" municao="true" />
+ 		<Item nome="Flecha3" peso="2" equipavel="true" instantaneo="false" municao="true" />
+ 	</Itens>
+ </ItemColecao>
+

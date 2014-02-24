@@ -1,0 +1,14 @@
+Temp/*
+Build/*
+obj/*
+
+*.pidb
+*.userprefs
+.DS_Store
+Library/metadata/*
+Library/*
+
+/Assets/AssetStoreTools/
+/Assets/AssetStoreTools.meta
+
+/Documentation/
