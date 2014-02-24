@@ -23,7 +23,7 @@ public class gJogo : MonoBehaviour {
 	}
 
 	void Update(){
-		msgTL.text = "Ammo: " + g.inventario.ContaItem(g.inventario.municao);
+		msgTL.text = g.inventario.ContaItem(g.inventario.municao) + " flechas";
 	}
 
 	public IEnumerator MostraMsgJogadorCurta(string texto){

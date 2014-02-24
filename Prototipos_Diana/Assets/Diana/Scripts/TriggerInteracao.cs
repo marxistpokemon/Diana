@@ -5,14 +5,17 @@ public class TriggerInteracao : MonoBehaviour {
 
 	void OnTriggerEnter(Collider obj){
 		if(obj.gameObject.CompareTag("Item")){
-			Debug.Log ("enter:" + obj.name);
-			gJogo.g.MostraMsgJogador("pegar " + obj.name);
+			gJogo.g.MostraMsgJogador("pegar " + obj.GetComponent<ItemMundo>().info.nome.ToLower());
 		}
 	}
 
 	void OnTriggerStay(Collider obj){
 		if(obj.gameObject.CompareTag("Item")){
-			Debug.Log ("stay:" + obj.name);
+			if(Input.GetButtonDown("Usar")){
+				gJogo.g.inventario.CarregaItem(obj.GetComponent<ItemMundo>().info, 1);
+				Destroy(obj.gameObject);
+				gJogo.g.EscondeMsgJogador();
+			}
 		}
 	}
 

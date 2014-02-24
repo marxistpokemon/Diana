@@ -83,12 +83,12 @@ public class Jogador : MonoBehaviour {
 
 	void ControlaTiros (){
 
-		if(Input.GetButton("Fire1") && gJogo.g.inventario.ContaItem(gJogo.g.inventario.municao) <= 0){
+		if(Input.GetButton("Atirar") && gJogo.g.inventario.ContaItem(gJogo.g.inventario.municao) <= 0){
 			StartCoroutine(gJogo.g.MostraMsgJogadorCurta("no ammo!"));
 		}
 
 		// quando acabou de pressionar o botao de tiro
-		if(Input.GetButtonDown("Fire1") && acaoAtual != Acao.Atirando && gJogo.g.inventario.ContaItem(gJogo.g.inventario.municao) > 0){
+		if(Input.GetButtonDown("Atirar") && acaoAtual != Acao.Atirando && gJogo.g.inventario.ContaItem(gJogo.g.inventario.municao) > 0){
 			acaoAtual = Acao.Atirando;
 			animacao.state.SetAnimation(0, "Idle", true);
 			motor.canControl = false;
@@ -103,7 +103,7 @@ public class Jogador : MonoBehaviour {
 		}
 
 		// quando esta segurando o botao de tiro
-		if(Input.GetButton("Fire1") && acaoAtual == Acao.Atirando){
+		if(Input.GetButton("Atirar") && acaoAtual == Acao.Atirando){
 			float novoAnguloMira = 0f;
 
 			float anguloAnterior = 
@@ -146,7 +146,7 @@ public class Jogador : MonoBehaviour {
 		}
 
 		// quando solta o botao de tiro
-		if(Input.GetButtonUp("Fire1") && acaoAtual == Acao.Atirando){
+		if(Input.GetButtonUp("Atirar") && acaoAtual == Acao.Atirando){
 			acaoAtual = Acao.Parado;
 			motor.canControl = true;
 			if(gJogo.g.inventario.DescarregaItem(gJogo.g.inventario.BuscaItemCarregado(gJogo.g.inventario.municao))){
@@ -155,6 +155,7 @@ public class Jogador : MonoBehaviour {
 					transform.position + new Vector3((int)olhar*0.6f, 1.5f, 0f), 
 					Quaternion.identity
 					) as Transform;
+				projetil.GetComponent<ItemMundo>().info = gJogo.g.inventario.BuscaItemInfo(gJogo.g.inventario.municao);
 				projetil.LookAt(mira.position);
 				projetil.rigidbody.AddForce(projetil.forward*20f, ForceMode.VelocityChange);
 			}

@@ -56,4 +56,8 @@ public class gInventario : MonoBehaviour {
 	public int ContaItem(Item item){
 		return itensCarregando.FindAll(i => i.info.nome == item.info.nome).Count;
 	}
+
+	public ItemInfo BuscaItemInfo (string nome) {
+		return todosItens.Itens.Find(item => item.nome == nome);
+	}
 }
