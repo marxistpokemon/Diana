@@ -8,6 +8,7 @@ public class WorldManagerEditor : Editor {
 	public override void OnInspectorGUI() {
 		DrawDefaultInspector();
 
+		/*
 		if(GUILayout.Button("Load from XML")) {
 			(target as WorldManager).LoadFromXML();
         }
@@ -20,6 +21,7 @@ public class WorldManagerEditor : Editor {
 				(target as WorldManager).WriteToXML();
 			}
 		}
+		*/
 	}
 }
 

@@ -13,7 +13,8 @@ public enum WorldSize {
 
 public abstract class WorldObject : MonoBehaviour {
 
-	public WorldObjectInfo info;
+	public int id;
+	public WorldSize size;
 
 	//TOP Include all components here
 	[HideInInspector] public Vulnerable vulnerable;

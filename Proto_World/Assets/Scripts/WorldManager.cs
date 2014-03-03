@@ -13,6 +13,7 @@ public class WorldManager : MonoBehaviour
 		w = this;
 	}
 
+	#region XML Serialization
 	public bool LoadFromXML(){
 		container = WorldObjectContainer.LoadFromText(worldObjectsFile.text);
 		return (container != null);
@@ -25,6 +26,9 @@ public class WorldManager : MonoBehaviour
 
 	public void WriteToXML(){
 		container.Save(AssetDatabase.GetAssetPath(worldObjectsFile));
+	
 	}
+
+	#endregion
 }
 
