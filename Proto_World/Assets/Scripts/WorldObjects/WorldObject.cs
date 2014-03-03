@@ -11,6 +11,12 @@ public enum WorldSize {
 	HUGE
 }
 
+[System.Serializable]
+public class WorldObjectInfo {
+	public int id;
+	public string displayName;
+}
+
 public abstract class WorldObject : MonoBehaviour {
 
 	public int id;
@@ -26,12 +32,17 @@ public abstract class WorldObject : MonoBehaviour {
 	[HideInInspector] public Edible edible;
 
 	public void Start(){
+
 		vulnerable = GetComponent<Vulnerable>();
 		flammable = GetComponent<Flammable>();
 		habitable = GetComponent<Habitable>();
 		portable = GetComponent<Portable>();
 		productive = GetComponent<Productive>();
 		edible = GetComponent<Edible>();
+
+		if(LoadFromXML){
+			
+		}
 	}
 
 	public void Destroy(){
@@ -43,7 +54,7 @@ public abstract class WorldObject : MonoBehaviour {
 		// Debug.Log ("WObj: " + name);
 		if(gTeste.g.cursor == "pickup"){
 			if(portable != null) {
-				//TODO pick up with Portable script
+				//TODO pick up with Portable script and Inventory menu
 				Debug.Log ("Picked up: " + name);
 				Destroy();
 			}
