@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(WorldObject))]
+//[RequireComponent(typeof(WorldObject))]
 public abstract class BaseCharacteristic : MonoBehaviour {
 
-	protected WorldObject worldObj;
+	protected WorldObject WO;
 	
 	void Awake () {
-		worldObj = GetComponent<WorldObject>();
+		WO = GetComponent<WorldObject>();
 	}
 }
