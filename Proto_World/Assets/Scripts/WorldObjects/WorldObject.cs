@@ -11,17 +11,9 @@ public enum WorldSize {
 	HUGE
 }
 
-[System.Serializable]
-public class WorldObjectInfo {
-	public int id;
-	public string displayName;
-}
-
 public abstract class WorldObject : MonoBehaviour {
 
-	public int id;
-	public WorldSize size;
-	public bool LoadFromXML = false;
+	public WorldObjectInfo info;
 
 	//TOP Include all components here
 	[HideInInspector] public Vulnerable vulnerable;
@@ -39,10 +31,6 @@ public abstract class WorldObject : MonoBehaviour {
 		portable = GetComponent<Portable>();
 		productive = GetComponent<Productive>();
 		edible = GetComponent<Edible>();
-
-		if(LoadFromXML){
-			
-		}
 	}
 
 	public void Destroy(){
